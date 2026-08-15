@@ -1,0 +1,9 @@
+\vspace{-1em}
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+
+Current embodied systems face significant challenges in human-robot interaction, including rigid working patterns and the inability to handle interruptions. The VITA-E framework addresses these limitations through its innovative dual-model architecture and special token-based control flow, taking an important step toward achieving concurrent and interruptible human-robot interaction. This is enabled by our proposed ``model-as-controller'' paradigm, where the VLM generates its own control tokens to directly control system behavior, tightly coupling high-level reasoning with system execution. While this dual-model architecture provides robustness and an effective solution to interruption, we acknowledge that it comes at the cost of higher computational resource consumption compared to single-model systems. There are also several limitations in our current implementation: further enhancement of model capabilities or verification of framework universality.
+
+Although more work remains, this work opens several exciting avenues for future research. First, our architecture could be extended to handle long-horizon, multi-stage tasks by exploiting the high-level VLM to direct the low-level execution policies step-by-step. Additionally, the framework's inherent support for interruption is well-suited for incorporating real-time human feedback to correct erroneous actions or guide novel behaviors, thereby improving task success rates. Finally, while our current task-switching relies on a safe retraction to a neutral state, we plan to explore methods for achieving smoother and more efficient transitions between tasks.
+
+We envision that this work will inspire future research toward more natural and intelligent human-robot collaboration, ultimately realizing the goal of seamless embodied assistants that can adapt and respond to human needs in dynamic, real-time environments.
