@@ -1,0 +1,118 @@
+
+\documentclass[runningheads]{llncs}
+
+% Version switch (from official ECCV template):
+% - review: blind review submission
+% - final: camera-ready
+% - mobile: small-screen reading mode
+% Note: ECCV template does not provide a dedicated "arXiv" switch.
+%
+% TODO REVIEW: Replace ID=0000 with your actual OpenReview paper ID.
+% Blind review (active)
+\usepackage[review,year=2026,ID=0000]{eccv}
+% Camera-ready (commented out)
+% \usepackage{eccv}
+% Mobile reading mode (optional, commented out)
+% \usepackage[mobile]{eccv}
+
+\usepackage{eccvabbrv}
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+
+% Compatibility aliases for manuscripts originally written with natbib.
+\newcommand{\citep}[1]{\cite{#1}}
+\newcommand{\citet}[1]{\cite{#1}}
+
+% Hyperref for blind review (active)
+\usepackage[pagebackref,breaklinks,colorlinks,citecolor=eccvblue]{hyperref}
+% Hyperref for camera-ready (commented out)
+% \usepackage{hyperref}
+
+\definecolor{kuaishoublue}{HTML}{6D9EEB}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=kuaishoublue,
+    citecolor=kuaishoublue,
+    urlcolor=kuaishoublue
+}
+
+\newcommand{\modelname}[1]{\mathrm{#1}}
+\newcommand{\VarSty}[1]{\textnormal{\ttfamily\color{blue!90!black}#1}\unskip}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+
+% Keep appendix outside the main manuscript by default for ECCV 14-page limit.
+\newif\ifincludeappendix
+\includeappendixfalse
+
+\title{VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing, Speaking, and Acting}
+\titlerunning{VITA-E: Natural Embodied Interaction}
+
+\author{
+Xiaoyu Liu\inst{1}
+\and Chaoyou Fu\inst{1}
+\and Chi Yan\inst{2}
+\and Chu Wu\inst{1}
+\and Haihan Gao\inst{2}
+\and Yi-Fan Zhang\inst{3}
+\and Shaoqi Dong\inst{1}
+\and Cheng Qian\inst{4}
+\and Bin Luo\inst{4}
+\and Xiuyong Yang\inst{4}
+\and Guanwu Li\inst{4}
+\and Yusheng Cai\inst{4}
+\and Yunhang Shen\inst{2}
+\and Deqiang Jiang\inst{2}
+\and Haoyu Cao\inst{2}
+\and Xing Sun\inst{2}
+\and Caifeng Shan\inst{1}
+\and Ran He\inst{3}
+}
+
+\authorrunning{X. Liu et al.}
+
+\institute{
+Nanjing University
+\and Tencent Youtu Lab
+\and CASIA
+\and Fourier Intelligence Inc.
+}
+
+\begin{document}
+
+\maketitle
+
+\input{VITA-E/sec/abstract}
+\input{VITA-E/sec/introduction}
+\input{VITA-E/sec/related_work}
+\input{VITA-E/sec/system_architecture}
+\input{VITA-E/sec/experiments}
+\input{VITA-E/sec/discussion}
+
+% For review, keep acknowledgments removed.
+% \section*{Acknowledgements}
+% \input{VITA-E/sec/acknowledgments}
+
+\bibliographystyle{splncs04}
+\bibliography{iclr2026_conference}
+
+\ifincludeappendix
+\clearpage
+\appendix
+\input{VITA-E/sec/appendix}
+\fi
+
+\end{document}

@@ -1,0 +1,107 @@
+
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2026_conference,times}
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+\definecolor{kuaishoublue}{HTML}{6D9EEB}
+\definecolor{baselinecolor}{gray}{.9}
+\hypersetup{
+    colorlinks=true,   % a \textbf{true}开启链接颜色
+    linkcolor=kuaishoublue, % a \textbf{kuaishoublue}设置内部链接（包括目录）的颜色
+    citecolor=kuaishoublue, % a 设置引用链接的颜色（例如 a \textbf{[1]}）
+    urlcolor=kuaishoublue   % a 设置URL链接的颜色
+}
+
+\newcommand{\modelname}[1]{\mathrm{#1}}
+
+\newcommand{\VarSty}[1]{\textnormal{\ttfamily\color{blue!90!black}#1}\unskip}
+
+
+\title{VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing, Speaking, and Acting}
+
+% Authors must not appear in the submitted version. They should be hidden
+% as long as the \iclrfinalcopy macro remains commented out below.
+% Non-anonymous submissions will be rejected without review.
+
+\author{%
+\textnormal{Xiaoyu Liu\textsuperscript{1}}\quad
+\textnormal{Chaoyou Fu\textsuperscript{1,\dag}}\quad
+\textnormal{Chi Yan\textsuperscript{2}}\quad
+\textnormal{Chu Wu\textsuperscript{1}}\quad
+\textnormal{Haihan Gao\textsuperscript{2}}\quad
+\textnormal{Yi-Fan Zhang\textsuperscript{3}}\quad \\
+Shaoqi Dong\textsuperscript{1}\quad
+Cheng Qian\textsuperscript{4}\quad
+Bin Luo\textsuperscript{4}\quad
+Xiuyong Yang\textsuperscript{4}\quad
+Guanwu Li\textsuperscript{4}\quad
+Yusheng Cai\textsuperscript{4}\quad \\
+Yunhang Shen\textsuperscript{2}\quad
+Deqiang Jiang\textsuperscript{2}\quad
+Haoyu Cao\textsuperscript{2, \ddag}\quad
+Xing Sun\textsuperscript{2}\quad
+Caifeng Shan\textsuperscript{1}\quad
+Ran He\textsuperscript{3} \\ \\
+\textsuperscript{1}\,Nanjing University \quad
+\textsuperscript{2}\,Tencent Youtu Lab \quad
+\textsuperscript{3}\,CASIA \quad
+\textsuperscript{4}\,Fourier Intelligence Inc. \\
+\textcolor{gray}{\textsuperscript{\dag}\,Corresponding author} \quad
+\textcolor{gray}{\textsuperscript{\ddag}\,Project leader} \\
+}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+% !!IMPORTANT!!
+\iclrfinalcopy % Uncomment for camera-ready version, but NOT for submission.
+\begin{document}
+
+
+\maketitle
+
+\input{VITA-E/sec/abstract}
+
+\input{VITA-E/sec/introduction}
+
+\input{VITA-E/sec/related_work}
+
+\input{VITA-E/sec/system_architecture}
+
+\input{VITA-E/sec/experiments}
+
+\input{VITA-E/sec/discussion}
+
+% \input{VITA-E/sec/acknowledgments}
+
+\bibliography{iclr2026_conference}
+\bibliographystyle{iclr2026_conference}
+
+% \appendix
+\section{Appendix}
+\input{VITA-E/sec/appendix}
+% You may include other additional sections here.
+
+
+\end{document}

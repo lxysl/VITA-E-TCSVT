@@ -1,0 +1,9 @@
+outputs
+*.pyc
+*/__pycache__/*
+*.egg*
+checkpoints-*
+.DS_Store
+custom
+silero_vad.onnx
+silero_vad.jit
