@@ -1,0 +1,80 @@
+\documentclass[letterpaper,journal]{IEEEtran}
+
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{stfloats}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+
+% Keep the original manuscript's math commands and citation syntax.
+\input{math_commands.tex}
+\newcommand{\citep}[1]{\cite{#1}}
+\newcommand{\citet}[1]{\cite{#1}}
+
+\newcommand{\modelname}[1]{\mathrm{#1}}
+\newcommand{\VarSty}[1]{\textnormal{\ttfamily\color{blue!90!black}#1}\unskip}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+
+\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
+
+\begin{document}
+
+\title{VITA-E: Natural Embodied Interaction with Concurrent Seeing, Hearing, Speaking, and Acting}
+
+% TODO: Add IEEE membership grades after the corresponding author names, if applicable.
+\author{Xiaoyu Liu, Chaoyou Fu, Chi Yan, Chu Wu, Haihan Gao, Yi-Fan Zhang,
+Shaoqi Dong, Cheng Qian, Bin Luo, Xiuyong Yang, Guanwu Li, Yusheng Cai,
+Yunhang Shen, Deqiang Jiang, Haoyu Cao, Xing Sun, Caifeng Shan, and Ran He%
+\thanks{X. Liu, C. Fu, C. Wu, S. Dong, and C. Shan are with Nanjing University.}%
+\thanks{C. Yan, H. Gao, Y. Shen, D. Jiang, H. Cao, and X. Sun are with Tencent Youtu Lab.}%
+\thanks{Y.-F. Zhang and R. He are with CASIA.}%
+\thanks{C. Qian, B. Luo, X. Yang, G. Li, and Y. Cai are with Fourier Intelligence Inc.}%
+\thanks{Complete postal addresses and e-mail addresses: \textbf{[PLACEHOLDER---not provided in the ECCV source.]}}%
+\thanks{Corresponding author: \textbf{[PLACEHOLDER---not specified in the ECCV source.]}}%
+% TODO: Add funding information here if applicable; none was provided in the ECCV source.
+}
+
+\markboth{IEEE Transactions on Circuits and Systems for Video Technology}%
+{Liu \MakeLowercase{\textit{et al.}}: VITA-E: Natural Embodied Interaction}
+
+% The IEEE publication ID and manuscript-history line are intentionally omitted
+% for submission; IEEE adds production metadata after acceptance.
+
+\maketitle
+
+\input{VITA-E/sec/abstract}
+
+\begin{IEEEkeywords}
+[PLACEHOLDER---Index terms were not provided in the ECCV source.]
+\end{IEEEkeywords}
+
+\input{VITA-E/sec/introduction}
+\input{VITA-E/sec/related_work}
+\input{VITA-E/sec/system_architecture}
+\input{VITA-E/sec/experiments}
+\input{VITA-E/sec/discussion}
+
+\section*{Acknowledgments}
+\input{VITA-E/sec/acknowledgments}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+% Author biographies and photos are optional in the supplied IEEE template and
+% are omitted because the ECCV source contains neither biographies nor photos.
+
+\end{document}
